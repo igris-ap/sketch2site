@@ -26,3 +26,7 @@ Any OpenAI-compatible API with a vision model works: set `LLM_BASE_URL`, `LLM_AP
 - `server/api.js`: `/api/detect` (sketch → boxes as JSON) and `/api/generate` (sketches + your edited boxes → code). The API key stays on the server.
 - `shared/options.js`: the animation vocabulary. Each name has a fixed definition that's quoted to the model, so "lift" means the same motion every time.
 - `src/export.js`: the preview compiles the JSX in the browser with Babel and loads React and motion from esm.sh through an import map. The iframe is sandboxed. The zip puts assets in `public/assets/` so the `/assets/...` paths work unchanged.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
